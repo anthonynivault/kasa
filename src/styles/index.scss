@@ -1,5 +1,9 @@
 @use './base/variables' as *;
 @use './components/header';
+@use './components/footer';
+@use './components/banner';
+@use './components/card';
+@use './pages/accueil';
 
 * {
   box-sizing: border-box;
@@ -7,7 +11,7 @@
 
 body {
   margin: 0;
-  font-family: sans-serif;
+  font-family: 'Montserrat', sans-serif;
   background-color: $color-background;
   color: $color-text;
 }

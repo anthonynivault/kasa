@@ -1,0 +1,13 @@
+@use '../base/variables' as *;
+
+.home {
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px 60px;
+    padding: 56px 50px 43px;
+    margin-bottom: 50px;
+    border-radius: 25px;
+    background-color: $color-background-light;
+  }
+}
