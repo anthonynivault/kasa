@@ -1,0 +1,30 @@
+@use '../base/variables' as *;
+
+.header {
+  padding: 45px 0 50px 0;
+  background-color: $color-background;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    width: 210px;
+  }
+
+  &__nav {
+    display: flex;
+    gap: 57px;
+  }
+
+  &__link {
+    font-size: 24px;
+    color: $color-text;
+
+    &--active {
+      text-decoration: underline;
+    }
+  }
+}
