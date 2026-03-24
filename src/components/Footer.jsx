@@ -1,7 +1,9 @@
+import LogoFooter from '../assets/logos/logo2.svg'
+
 function Footer() {
   return (
-    <footer>
-      <p>Kasa - 2026</p>
+    <footer className="footer">
+      <img className="footer__logo" src={LogoFooter} alt="Logo Kasa © 2020 Kasa. All rights reserved" />
     </footer>
   )
 }
