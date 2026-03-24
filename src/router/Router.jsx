@@ -7,15 +7,15 @@ import Layout from '../layouts/Layout'
 
 function Router() {
   return (
-    <BrowserRouter>
-    <Layout>
+     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Accueil />} />
-        <Route path="/a-propos" element={<Apropos />} />
-        <Route path="/logement/:id" element={<Logement />} />
-        <Route path="*" element={<Erreur />} />
+        <Route element={<Layout />}>
+          <Route path="/" element={<Accueil />} />
+          <Route path="/a-propos" element={<Apropos />} />
+          <Route path="/logement/:id" element={<Logement />} />
+          <Route path="*" element={<Erreur />} />
+        </Route>
       </Routes>
-    </Layout>
     </BrowserRouter>
   )
 }
