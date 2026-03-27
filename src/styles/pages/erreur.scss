@@ -1,0 +1,24 @@
+@use '../base/variables' as *;
+
+.error {
+  margin-top: 94px;
+  margin-bottom: 139px;
+  text-align: center;
+  color: $color-primary;
+
+  &__code {
+    margin-bottom: 139px;
+    font-size: 288px;
+  }
+
+  &__text {
+    margin-bottom: 139px;
+    font-size: 36px;
+  }
+
+  &__link {
+    color: $color-text;
+    font-size: 18px;
+    text-decoration: underline;
+  }
+}
