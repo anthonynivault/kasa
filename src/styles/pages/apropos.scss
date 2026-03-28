@@ -1,0 +1,13 @@
+@use '../base/variables' as *;
+
+.about {
+  margin-bottom: 50px;
+
+  &__collapses {
+    max-width: 1023px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+}

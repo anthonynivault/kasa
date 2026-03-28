@@ -5,10 +5,7 @@
   height: 223px;
   margin-bottom: 43px;
   border-radius: 25px;
-  background-image:
-    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url('../../assets/images/banner-home.webp');
-    background-position: center;
+  background-position: center;
 
   display: flex;
   align-items: center;
@@ -19,5 +16,9 @@
     font-size: 48px;
     text-align: center;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.50);
+  }
+
+  &--about {
+    margin-bottom: 38px;
   }
 }

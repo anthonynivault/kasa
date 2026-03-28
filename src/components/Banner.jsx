@@ -1,7 +1,17 @@
-function Banner() {
+function Banner({ title, image, alt = '', variant = '' }) {
+  const bannerClassName = variant
+    ? `banner banner--${variant}`
+    : 'banner'
+
   return (
-    <section className="banner">
-      <h1 className="banner__title">Chez vous, partout et ailleurs</h1>
+    <section
+      className={bannerClassName}
+      style={{
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${image})`,
+      }}
+      aria-label={alt}
+    >
+      {title && <h1 className="banner__title">{title}</h1>}
     </section>
   )
 }
