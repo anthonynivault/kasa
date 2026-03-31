@@ -22,3 +22,23 @@
     margin-bottom: 38px;
   }
 }
+
+@media (max-width: $breakpoint-mobile) {
+  .banner {
+    height: 111px;
+    margin-bottom: 22px;
+    border-radius: 10px;
+    justify-content: flex-start;
+    padding: 0 16px;
+
+    &__title {
+      max-width: 220px;
+      font-size: 24px;
+      text-align: left;
+    }
+
+    &--about {
+      margin-bottom: 19px;
+    }
+  }
+}

@@ -11,3 +11,15 @@
     background-color: $color-background-light;
   }
 }
+
+@media (max-width: $breakpoint-mobile) {
+  .home {
+    &__cards {
+      grid-template-columns: 1fr;
+      gap: 20px;
+      padding: 0;
+      margin-bottom: 27px;
+      background-color: transparent;
+    }
+  }
+}

@@ -11,3 +11,13 @@
     gap: 30px;
   }
 }
+
+@media (max-width: 768px) {
+  .about {
+    margin-bottom: 19px;
+
+    &__collapses {
+      gap: 20px;
+    }
+  }
+}

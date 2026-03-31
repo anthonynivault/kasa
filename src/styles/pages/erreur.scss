@@ -22,3 +22,24 @@
     text-decoration: underline;
   }
 }
+
+@media (max-width: $breakpoint-mobile) {
+  .error {
+    margin-top: 113px;
+    margin-bottom: 113px;
+
+    &__code {
+      margin-bottom: 113px;
+      font-size: 96px;
+    }
+
+    &__text {
+      margin-bottom: 113px;
+      font-size: 18px;
+    }
+
+    &__link {
+      font-size: 14px;
+    }
+  }
+}
