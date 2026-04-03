@@ -1,6 +1,7 @@
 import { useParams } from 'react-router-dom'
 import logements from '../data/logements.json'
 import Erreur from './Erreur'
+import Slideshow from '../components/Slideshow'
 
 function Logement() {
   const { id } = useParams()
@@ -12,7 +13,9 @@ function Logement() {
   }
 
   return (
-    <section>
+    <section className="logement">
+      <Slideshow pictures={logement.pictures} title={logement.title} />
+
       <h1>{logement.title}</h1>
       <p>{logement.location}</p>
     </section>
