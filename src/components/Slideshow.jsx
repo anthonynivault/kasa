@@ -4,6 +4,10 @@ import arrow from '../assets/images/arrow.svg'
 function Slideshow({ pictures, title }) {
   const [currentIndex, setCurrentIndex] = useState(0)
 
+  if (!pictures || pictures.length === 0) {
+  return null
+}
+
   const totalSlides = pictures.length
   const hasMultipleSlides = totalSlides > 1
 
@@ -26,7 +30,8 @@ function Slideshow({ pictures, title }) {
   return (
     <section className="slideshow">
       <img
-        className="slideshow__image"
+        key={pictures[currentIndex]}
+        className="slideshow__image slideshow__image--active"
         src={pictures[currentIndex]}
         alt={title}
       />
